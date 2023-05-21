@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center_horizontal"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="top|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:padding="4dp"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/d1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:strokeWidth="2dp"
+                app:strokeColor="#FF0000"
+                app:shapeAppearanceOverlay="@style/circle"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:padding="4dp"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/d1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:strokeWidth="2dp"
+                app:strokeColor="#FF0000"
+                app:shapeAppearanceOverlay="@style/CornerCut"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:padding="4dp"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/d1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:strokeWidth="2dp"
+                app:strokeColor="#FF0000"
+                app:shapeAppearanceOverlay="@style/DiamonCut"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
